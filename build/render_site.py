@@ -17,8 +17,12 @@ import shutil
 ROOT = pathlib.Path(__file__).resolve().parent.parent
 SITE = ROOT / "site"
 DATA = SITE / "data"
-EXPORTS_SRC = ROOT.parent / "exports"
 EXPORTS_DST = SITE / "exports"
+# Prefer the canonical parent-repo exports dir; fall back to the cartridges
+# already committed under site/exports/ (standalone public repo has no parent).
+EXPORTS_SRC = ROOT.parent / "exports"
+if not EXPORTS_SRC.exists():
+    EXPORTS_SRC = EXPORTS_DST
 
 FONTS_HREF = "https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500;600&display=swap"
 STYLESHEET_HREF = "styles-20260708-accessible-docs.css"
@@ -84,6 +88,8 @@ def copy_canvas_exports():
     exports = canvas_exports()
     if not exports:
         return exports
+    if EXPORTS_SRC.resolve() == EXPORTS_DST.resolve():
+        return exports  # standalone repo: cartridges already in site/exports/
     EXPORTS_DST.mkdir(parents=True, exist_ok=True)
     for stale in EXPORTS_DST.glob("aiinfra-*-*.imscc"):
         stale.unlink()
