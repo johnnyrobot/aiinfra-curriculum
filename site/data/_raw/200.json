@@ -1,0 +1,47 @@
+{
+  "code": "200",
+  "title": "Containerization, Cloud Platforms & CI/CD for AI",
+  "subtitle": "Package, deploy, and automate AI workloads with Docker, Kubernetes, cloud, and CI/CD",
+  "description": "This second-semester deployment course picks up where the applied lab leaves off. Students move from local Docker basics into production-minded container images, Compose, registries, image scanning, Kubernetes fundamentals, cloud platforms, infrastructure as code, and CI/CD pipelines for AI workloads. GPU-aware Kubernetes and advanced serving are introduced as deployment context, while deep production inference tuning remains in AIINFRA 201.",
+  "objectives": [
+    "Build, tag, scan, and publish container images for AI/Python services using Docker and a container registry.",
+    "Run multi-container AI stacks locally and explain when to move from Compose to Kubernetes or managed cloud services.",
+    "Deploy containerized AI workloads using Kubernetes fundamentals, cloud compute, object storage, and managed AI/ML services.",
+    "Build CI/CD pipelines with GitHub Actions that test, scan, build, and deploy containerized model services automatically.",
+    "Apply infrastructure-as-code, IAM, secrets controls, budget guardrails, and monitoring to cloud AI deployments."
+  ],
+  "slos": [
+    "Build, tag, scan, and publish container images for AI/Python services.",
+    "Run multi-container AI stacks locally and explain the bridge from Compose to Kubernetes or managed cloud services.",
+    "Deploy containerized AI workloads using Kubernetes fundamentals, cloud compute, object storage, and managed AI/ML services.",
+    "Create GitHub Actions pipelines that test, scan, build, and deploy containerized model services.",
+    "Apply infrastructure-as-code, IAM, secrets controls, budget guardrails, and monitoring to cloud AI deployments."
+  ],
+  "weeks": [
+    {"n": 1, "title": "From Local Lab to Deployable AI Service", "summary": "Reviews AIINFRA 102 lab evidence and frames the second-semester move from local service to deployable artifact."},
+    {"n": 2, "title": "Production Dockerfiles, Layers, and Build Caching", "summary": "Builds secure, repeatable Docker images for AI/Python services and explains image-layer caching."},
+    {"n": 3, "title": "Docker Compose for Multi-Service AI Applications", "summary": "Uses Compose to run app, model, database/cache, and monitoring sidecars in a local stack."},
+    {"n": 4, "title": "Registries, Tags, SBOMs, and Image Scanning", "summary": "Covers registry workflows, semantic tags, SBOM basics, and Trivy-style image scanning/remediation."},
+    {"n": 5, "title": "Kubernetes Fundamentals: Pods, Deployments, Services, and Config", "summary": "Introduces core Kubernetes objects and the deployment model used by AI services."},
+    {"n": 6, "title": "Deploying a Containerized AI Service to Kubernetes", "summary": "Deploys a small AI inference service with manifests, resource requests, health checks, and service exposure."},
+    {"n": 7, "title": "Cloud Computing for AI: Providers, Regions, and Free Tiers", "summary": "Introduces AWS, Azure, and Google Cloud free-tier structures and the distinction between regions and zones."},
+    {"n": 8, "title": "Cloud Accounts, IAM, Networking, and Cost Guardrails", "summary": "Midterm week: covers least-privilege IAM, networking basics, secrets, and budget controls for student-safe cloud labs."},
+    {"n": 9, "title": "Cloud Compute, Object Storage, and Managed AI/ML Services", "summary": "Compares cloud VMs, object storage, and managed AI/ML services for deployment and experimentation."},
+    {"n": 10, "title": "Infrastructure as Code for AI Deployments with Terraform", "summary": "Teaches Terraform workflow, state, variables, and provisioning a small no-cost or low-cost AI deployment."},
+    {"n": 11, "title": "Introduction to CI/CD and GitHub Actions", "summary": "Introduces CI/CD concepts and builds a first GitHub Actions workflow for an AI service repository."},
+    {"n": 12, "title": "Continuous Integration: Tests, Scans, and Image Builds", "summary": "Extends CI with tests, dependency checks, image scanning, and reproducible container image builds."},
+    {"n": 13, "title": "Continuous Delivery: Automated Deployment and Rollback", "summary": "Covers deployment automation, blue-green/canary concepts, and rollback plans for model services."},
+    {"n": 14, "title": "Monitoring, Logging, and Cost Optimization for Cloud AI", "summary": "Covers logs, metrics, alerts, and cost optimization for deployed AI workloads."},
+    {"n": 15, "title": "GPU-Aware Orchestration Preview and Handoff to AIINFRA 201", "summary": "Previews GPU Operator, managed Kubernetes, KServe, and the deeper production-serving work in AIINFRA 201."},
+    {"n": 16, "title": "Capstone Project & Course Review", "summary": "Students deliver a containerized, scanned, CI/CD-backed AI deployment with cloud or local fallback evidence."}
+  ],
+  "tools": [
+    {"group": "Containers", "items": ["Docker", "Docker Compose", "Dockerfile", "GitHub Container Registry"]},
+    {"group": "Container security", "items": ["Trivy", "SBOM basics", "image tags", "dependency scans"]},
+    {"group": "Orchestration", "items": ["Kubernetes", "kubectl", "kind/minikube", "Deployments", "Services", "ConfigMaps/Secrets"]},
+    {"group": "Cloud platforms", "items": ["AWS", "Microsoft Azure", "Google Cloud", "LocalStack"]},
+    {"group": "Compute & storage", "items": ["EC2 / Compute Engine / Azure VMs", "object storage", "managed AI/ML services"]},
+    {"group": "CI/CD & IaC", "items": ["GitHub Actions", "Terraform", "OIDC/secrets", "rollback plans"]},
+    {"group": "Monitoring & cost", "items": ["Prometheus/Grafana", "CloudWatch", "budget alerts", "cost estimates"]}
+  ]
+}

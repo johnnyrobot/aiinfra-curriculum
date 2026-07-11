@@ -1,0 +1,46 @@
+{
+  "code": "303",
+  "title": "Capstone Project",
+  "subtitle": "Design, build, deploy, and present one production-grade AI system",
+  "description": "AIINFRA 303 is the culminating capstone of the AI Infrastructure and Architecture certificate sequence. Students design, build, deploy, and present a complete production-grade AI system of their own scoping — integrating compute, containers, cloud infrastructure, and a model or agent layer end to end. The course emphasizes professional practice: architecture documentation, infrastructure as code, CI/CD automation, security and observability, and a polished portfolio artifact suitable for employer review.",
+  "objectives": [
+    "Scope, plan, and document a production-grade AI infrastructure project with clear requirements, success metrics, and architecture decision records",
+    "Design and diagram a complete end-to-end AI system architecture integrating compute, containers, cloud, and the model/serving layer",
+    "Implement, containerize, and deploy the system to the cloud with infrastructure-as-code and an automated CI/CD pipeline",
+    "Integrate a model capability (serving, fine-tuning/adaptation, RAG, or an agent/MCP layer) with security guardrails, evaluation, and observability",
+    "Load-test, right-size, document, and present a reproducible, cost-instrumented capstone with a professional portfolio artifact and demo"
+  ],
+  "slos": [
+    "Scope, plan, and document a production-grade AI infrastructure project with clear requirements, success metrics, and architecture decision records.",
+    "Design and diagram a complete end-to-end AI system architecture integrating compute, containers, cloud, and the model/serving layer.",
+    "Implement, containerize, and deploy the system to the cloud with infrastructure-as-code and an automated CI/CD pipeline.",
+    "Integrate a model capability (serving, fine-tuning/adaptation, RAG, or an agent/MCP layer) with security guardrails, evaluation, and observability.",
+    "Load-test, right-size, document, and present a reproducible, cost-instrumented capstone with a professional portfolio artifact and demo."
+  ],
+  "weeks": [
+    {"n": 1, "title": "Capstone Kickoff: Scoping a Production AI System", "summary": "Kicks off the capstone by having students scope a production-grade AI system of their own choosing."},
+    {"n": 2, "title": "Requirements, Success Metrics, and Architecture Decision Records", "summary": "Covers writing Architecture Decision Records and defining SLI/SLO success metrics for the capstone project."},
+    {"n": 3, "title": "System Architecture and Full-Stack Infrastructure Design", "summary": "Covers layered AI system architecture and producing C4-style context and container diagrams as code."},
+    {"n": 4, "title": "Project Planning: Milestones, Risk, and a Reproducible Repository", "summary": "Covers reproducibility practices, data versioning, a scaffolded repository, and a risk register with milestone roadmap."},
+    {"n": 5, "title": "Building the Core: Containerized Services and Environments", "summary": "Students build out the containerized core services and environments defined in the Week 3 architecture sketch."},
+    {"n": 6, "title": "Deploying to the Cloud with Infrastructure as Code", "summary": "Covers deploying the capstone's core services to the cloud using infrastructure as code."},
+    {"n": 7, "title": "A CI/CD Pipeline for Your Capstone", "summary": "Covers CI/CD concepts and building a working GitHub Actions pipeline that lints, tests, builds, and pushes a Docker image."},
+    {"n": 8, "title": "Design Review and Working Vertical Slice", "summary": "Midterm week: students deploy a working vertical slice to an orchestrator and present a design review against their ADRs, diagrams, and SLOs."},
+    {"n": 9, "title": "The Model Layer: Serving, Adaptation, or RAG Integration", "summary": "Students choose and build the model-layer strategy for their capstone: serving, fine-tuning/adaptation, or RAG."},
+    {"n": 10, "title": "Adding Agentic and MCP or Retrieval Capabilities", "summary": "Covers adding agentic, MCP, or retrieval capabilities on top of the capstone's model layer."},
+    {"n": 11, "title": "Security, Guardrails, and Responsible-AI Hardening", "summary": "Covers hardening the capstone with security controls, guardrails, and responsible-AI practices."},
+    {"n": 12, "title": "Observability, Evaluation, and Cost Instrumentation", "summary": "Covers instrumenting the capstone with Prometheus/Grafana observability, OpenCost cost allocation, and a RAGAS evaluation baseline."},
+    {"n": 13, "title": "Load Testing, Right-Sizing, and Performance Tuning", "summary": "Covers load testing the capstone system and right-sizing and tuning it for performance."},
+    {"n": 14, "title": "Documentation, Runbooks, and Reproducibility", "summary": "Covers writing documentation and runbooks that make the capstone reproducible for another operator."},
+    {"n": 15, "title": "Portfolio Packaging, Demo Prep, and Technical Storytelling", "summary": "Covers turning the capstone repo into a portfolio artifact with an architecture-diagram README and a rehearsed demo script."},
+    {"n": 16, "title": "Final Capstone Submission, Presentation & Course Review", "summary": "Final capstone week: students submit, present, and demo their completed production-grade AI system for course review."}
+  ],
+  "tools": [
+    {"group": "Planning & Architecture", "items": ["draw.io", "Excalidraw", "Architecture Decision Records", "GitHub Projects/Issues", "Markdown docs"]},
+    {"group": "Containers, Cloud & IaC", "items": ["Docker", "Docker Compose", "Kubernetes (kind/minikube)", "Helm", "AWS/GCP/Azure free tiers", "Terraform", "LocalStack"]},
+    {"group": "CI/CD", "items": ["GitHub Actions", "act"]},
+    {"group": "Model Layer", "items": ["vLLM/Ollama", "Hugging Face/PEFT", "Qdrant/pgvector", "LangGraph/MCP"]},
+    {"group": "Security & Governance", "items": ["OWASP LLM Top 10", "NeMo Guardrails/LLM Guard", "Presidio", "Model cards"]},
+    {"group": "Observability, FinOps & Portfolio", "items": ["Prometheus + Grafana", "Langfuse/Arize Phoenix", "OpenCost/Kubecost", "GitHub README", "Architecture diagrams", "Screen recording", "Slides"]}
+  ]
+}

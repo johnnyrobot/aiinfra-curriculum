@@ -1,0 +1,24 @@
+# OS / editor
+.DS_Store
+
+# Node deps
+node_modules/
+
+# Python caches
+__pycache__/
+*.pyc
+.pytest_cache/
+
+# Agent / internal working files
+.claude/
+.superpowers/
+docs/superpowers/
+
+# Cloudflare / deploy local state
+.wrangler/
+.dev.vars
+
+# stale / retired source artifacts (kept local, not published)
+site/data/curriculum.json.v1bak
+site/data/_raw/102.json
+site/data/_raw/202.json

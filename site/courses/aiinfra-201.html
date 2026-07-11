@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AIINFRA 201: Model Adaptation — Fine-Tuning &amp; Quantization</title>
+  <meta name="description" content="Customize and compress open-weight LLMs on consumer and cloud GPUs">
+  <meta name="theme-color" content="#ffffff">
+  <link rel="icon" type="image/svg+xml" href="../assets/favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../styles-20260708-accessible-docs.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <a class="brand" href="../">AI Infrastructure &amp; Architecture</a>
+    <nav class="nav" aria-label="Primary">
+      <a class="nav-cta" href="../index.html">Program overview</a>
+      <a class="nav-link is-active" href="../index.html#courses">Courses</a>
+      <a class="nav-link" href="../index.html#foundry">Foundry</a>
+      <a class="nav-link" href="../index.html#careers">Careers</a>
+      <a class="nav-link" href="../index.html#pathway">Pathway</a>
+      <a class="nav-doc" href="../documents/aiinfra-program-readiness-curriculum-alignment-report.html">Program Readiness Report</a>
+      <a class="nav-doc" href="../documents/academic-senate-report-ai-foundry-evaluation.html">Academic Senate Report</a>
+    </nav>
+  </header>
+  <main id="main">
+<section class="hero course-hero" aria-labelledby="course-title">
+      <div class="container hero-inner">
+        <a class="back" href="../index.html#courses">&larr; All courses</a>
+        <p class="eyebrow">// AIINFRA 201 &middot; Semester 2</p>
+        <h1 id="course-title">Model Adaptation — Fine-Tuning & Quantization</h1>
+        <p class="hero-lead">Customize and compress open-weight LLMs on consumer and cloud GPUs</p>
+        <p class="hero-note">This hands-on course teaches adult learners to adapt open-weight language models to specific tasks and domains without enterprise-scale hardware. Students learn to decide when to fine-tune versus prompt-engineer or use RAG, build and format instruction datasets, and run supervised and parameter-efficient fine-tuning (LoRA, QLoRA, PEFT) plus preference tuning with DPO using Hugging Face, Unsloth, and Axolotl. The course also covers quantization formats (GGUF, AWQ, GPTQ, FP8), KV-cache quantization, and knowledge distillation to shrink models for deployment. Learners evaluate adapted models, guard against overfitting and catastrophic forgetting, and address the licensing and ethics of model weights and training data.</p>
+      </div>
+    </section>
+<div class="container">
+      <div class="meta-band">
+        <div class="m"><span class="k">Contact hours</span><span class="v">54 hrs</span></div>
+        <div class="m"><span class="k">Credit equivalent</span><span class="v">3-unit</span></div>
+        <div class="m"><span class="k">Requisite</span><span class="v">Requires AIINFRA 200 or equivalent model-serving readiness.</span></div>
+        <div class="m"><span class="k">Direct evidence</span><span class="v">Adapter or quantized model evaluation</span></div>
+        <div class="m"><span class="k">Length</span><span class="v">16 weeks</span></div>
+      </div>
+    </div>
+<section class="canvas-export-section" id="canvas-export"><div class="container">
+  <div class="canvas-export-card">
+    <div class="canvas-export-copy">
+      <span class="kicker"><span class="idx">download</span>&nbsp;/ canvas package</span>
+      <h2>Canvas IMSCC Export</h2>
+      <p>Download the complete Canvas import package for AIINFRA 201.</p>
+      
+      <span class="canvas-export-meta">285.2 KB &middot; .imscc</span>
+    </div>
+    <a class="canvas-export-link" href="../exports/aiinfra-201-model-adaptation-fine-tuning-and-quantization-export.imscc" download>
+      Canvas IMSCC Export
+      <svg class="arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v12"></path><path d="m7 10 5 5 5-5"></path><path d="M5 21h14"></path></svg>
+    </a>
+  </div>
+</div></section>
+<section class="section" id="outcomes"><div class="container">
+  <div class="sec-head"><span class="kicker"><span class="idx">01</span>&nbsp;/ outcomes</span><h2>Outcomes</h2></div>
+  <div class="outcomes-grid">
+          <div>
+            <h3>Course objectives</h3>
+            <ol>
+            <li>Evaluate a task and choose correctly among prompt engineering, retrieval-augmented generation, and fine-tuning, justifying the decision by cost, data availability, and hardware limits.</li>
+            <li>Build, clean, and format instruction and chat datasets and run supervised and parameter-efficient fine-tuning (LoRA, QLoRA, PEFT) on a single consumer or cloud GPU.</li>
+            <li>Apply preference tuning with DPO and track experiments to improve a model while avoiding overfitting and catastrophic forgetting.</li>
+            <li>Quantize models into GGUF, AWQ, GPTQ, and FP8 formats and analyze the resulting precision, quality, and memory tradeoffs.</li>
+            <li>Assess licensing and ethical constraints on model weights and training data and package an adapted, quantized model for serving.</li>
+            </ol>
+          </div>
+          <div>
+            <h3>Student learning outcomes</h3>
+            <ul>
+            <li>Choose correctly among prompt engineering, RAG, and fine-tuning for a given task, cost, and hardware budget.</li>
+            <li>Build instruction/chat datasets and run SFT and parameter-efficient fine-tuning (LoRA/QLoRA/PEFT) on a single GPU.</li>
+            <li>Apply DPO preference tuning and track experiments while avoiding overfitting and catastrophic forgetting.</li>
+            <li>Quantize models to GGUF, AWQ, GPTQ, and FP8 and analyze precision, quality, and memory tradeoffs.</li>
+            <li>Evaluate model-weight and training-data licensing/ethics and package an adapted, quantized model for serving.</li>
+            </ul>
+          </div>
+        </div>
+</div></section>
+<section class="section" id="schedule"><div class="container">
+  <div class="sec-head"><span class="kicker"><span class="idx">02</span>&nbsp;/ schedule</span><h2>16-week schedule</h2></div>
+  <div class="sched-list"><div class="sched-row"><div class="wk">Wk 01</div>
+  <div class="body"><div class="t">Adapt, Prompt, or Retrieve: The Model Customization Decision</div><div class="d">Introduces the canonical decision sequence — prompt engineering, then RAG, then fine-tuning — and when each is justified by cost, data, and hardware.</div></div></div><div class="sched-row"><div class="wk">Wk 02</div>
+  <div class="body"><div class="t">Open Models, Licenses, and the Fine-Tuning Toolchain Setup</div><div class="d">Surveys open-weight model families and licenses and sets up the fine-tuning toolchain used throughout the course.</div></div></div><div class="sched-row"><div class="wk">Wk 03</div>
+  <div class="body"><div class="t">Dataset Design and Data Preparation for Fine-Tuning</div><div class="d">Covers designing, cleaning, and preparing datasets suitable for supervised fine-tuning.</div></div></div><div class="sched-row"><div class="wk">Wk 04</div>
+  <div class="body"><div class="t">Instruction and Chat Formatting, Tokenization, and Templates</div><div class="d">Covers instruction and chat formatting conventions, tokenization, and chat templates used to prepare training data.</div></div></div><div class="sched-row"><div class="wk">Wk 05</div>
+  <div class="body"><div class="t">Supervised Fine-Tuning Fundamentals with Hugging Face TRL</div><div class="d">Introduces supervised fine-tuning fundamentals using the Hugging Face TRL library.</div></div></div><div class="sched-row"><div class="wk">Wk 06</div>
+  <div class="body"><div class="t">Parameter-Efficient Fine-Tuning: LoRA and PEFT</div><div class="d">Covers parameter-efficient fine-tuning methods, focusing on LoRA and the Hugging Face PEFT library.</div></div></div><div class="sched-row"><div class="wk">Wk 07</div>
+  <div class="body"><div class="t">QLoRA and Training on Consumer GPUs with Unsloth</div><div class="d">Covers QLoRA and using Unsloth to train models efficiently on consumer-grade GPUs.</div></div></div><div class="sched-row is-midterm"><div class="wk">Wk 08</div>
+  <div class="body"><div class="t">Axolotl, Config-Driven Training, and Experiment Tracking</div><div class="d">Midterm week: covers config-driven training with Axolotl and experiment tracking practices.</div><span class="flag">Midterm &middot; covers Wks 1&ndash;7</span></div></div><div class="sched-row"><div class="wk">Wk 09</div>
+  <div class="body"><div class="t">Preference Tuning: DPO in Practice (with a Look at GRPO)</div><div class="d">Covers Direct Preference Optimization in practice and contrasts it with GRPO&#x27;s group-relative reward approach.</div></div></div><div class="sched-row"><div class="wk">Wk 10</div>
+  <div class="body"><div class="t">Evaluating Fine-Tuned Models and Detecting Overfitting</div><div class="d">Covers evaluation methods for fine-tuned models and techniques for detecting overfitting.</div></div></div><div class="sched-row"><div class="wk">Wk 11</div>
+  <div class="body"><div class="t">Catastrophic Forgetting, Adapter Merging, and Cloud Training</div><div class="d">Covers catastrophic forgetting, merging trained adapters into base models, and moving training workloads to the cloud.</div></div></div><div class="sched-row"><div class="wk">Wk 12</div>
+  <div class="body"><div class="t">Quantization Foundations: Precision, GGUF, and llama.cpp</div><div class="d">Introduces quantization foundations, numeric precision tradeoffs, the GGUF format, and llama.cpp.</div></div></div><div class="sched-row"><div class="wk">Wk 13</div>
+  <div class="body"><div class="t">Advanced Quantization: AWQ, GPTQ, FP8, and KV-Cache Quantization</div><div class="d">Covers advanced quantization methods including AWQ, GPTQ, FP8, and KV-cache quantization.</div></div></div><div class="sched-row"><div class="wk">Wk 14</div>
+  <div class="body"><div class="t">Knowledge Distillation and Quality-Size Tradeoff Analysis</div><div class="d">Covers knowledge distillation techniques and analyzing quality-versus-size tradeoffs for compressed models.</div></div></div><div class="sched-row"><div class="wk">Wk 15</div>
+  <div class="body"><div class="t">Serving Adapted and Quantized Models — Handoff to AIINFRA 201</div><div class="d">Covers serving fine-tuned, quantized models and preparing a handoff document for production serving in AIINFRA 201.</div></div></div><div class="sched-row is-capstone"><div class="wk">Wk 16</div>
+  <div class="body"><div class="t">Capstone Project &amp; Course Review</div><div class="d">Final capstone week: students package and present an adapted, quantized model ready for deployment.</div><span class="flag">Capstone</span></div></div></div></div></section>
+<section class="section foundry-projects" id="course-controls"><div class="container">
+  <div class="sec-head split"><div><span class="kicker"><span class="idx">03</span>&nbsp;/ Senate-ready controls</span><h2>Course evidence and boundaries</h2></div>
+  <p class="note">These controls make the curriculum reviewable without changing the 10-course sequence.</p></div>
+  <div class="project-grid">
+        <article class="project-card">
+          <span class="project-k">Course boundary</span>
+          <p>Focuses on model adaptation and deployment readiness, not broad data science theory or from-scratch model research.</p>
+        </article>
+        <article class="project-card">
+          <span class="project-k">Assessment artifact</span>
+          <p>LoRA/QLoRA or quantization artifact with dataset card, evaluation comparison, and serving handoff note.</p>
+        </article>
+        <article class="project-card">
+          <span class="project-k">Security/control evidence</span>
+          <p>Dataset provenance, PII/privacy review, model/license note, and safe adapter-release checklist.</p>
+        </article>
+        <article class="project-card">
+          <span class="project-k">Capstone evidence</span>
+          <p>Adapter or quantized model package, evaluation report, model card, serving notes, and reproducibility instructions.</p>
+        </article>
+  </div>
+</div></section>
+<section class="section foundry-projects" id="foundry-projects"><div class="container">
+  <div class="sec-head split"><div><span class="kicker"><span class="idx">04</span>&nbsp;/ foundry projects</span><h2>Foundry-backed assignments</h2></div>
+  <p class="note">These assignments are written in platform-agnostic language. They assess infrastructure evidence, not familiarity with a single vendor console.</p></div>
+  <div class="project-grid">
+        <article class="project-card">
+          <span class="project-k">Foundry project</span>
+          <h3>Custom Adapter Training</h3>
+          <p>Teams train a task-specific LoRA/QLoRA adapter with scheduled foundry GPU time, compare base versus adapted behavior, and package the result for serving or handoff.</p>
+          <p class="evidence"><strong>Evidence:</strong> Dataset card, baseline and post-training evaluation, training logs, adapter artifact, model card, compute profile, and cost comparison.</p>
+        </article>
+        <article class="project-card">
+          <span class="project-k">Foundry project</span>
+          <h3>STEM Dataset Preparation Extension</h3>
+          <p>Students working with STEM partners add domain meaning to dataset prep: units, variables, plausible outputs, unacceptable errors, versioning, and reproducible splits.</p>
+          <p class="evidence"><strong>Evidence:</strong> Data card, domain note, infrastructure note, preprocessing script, data version, random seeds, and evaluation split.</p>
+        </article>
+  </div>
+</div></section>
+<section class="section subtle" id="tools"><div class="container">
+  <div class="sec-head"><span class="kicker"><span class="idx">05</span>&nbsp;/ tools</span><h2>Tools &amp; frameworks</h2></div>
+  <div class="tools-list" style="display:flex;flex-direction:column;">
+        <div class="tool-group">
+          <span class="g">Fine-tuning libraries</span>
+          <div class="tags"><span class="tag">Hugging Face Transformers</span><span class="tag">PEFT</span><span class="tag">TRL</span></div>
+        </div>
+        <div class="tool-group">
+          <span class="g">Accelerated training</span>
+          <div class="tags"><span class="tag">Unsloth</span><span class="tag">Axolotl</span><span class="tag">bitsandbytes</span></div>
+        </div>
+        <div class="tool-group">
+          <span class="g">Quantization</span>
+          <div class="tags"><span class="tag">llama.cpp/GGUF</span><span class="tag">AutoAWQ</span><span class="tag">GPTQModel</span><span class="tag">llm-compressor (FP8)</span></div>
+        </div>
+        <div class="tool-group">
+          <span class="g">Experiment tracking</span>
+          <div class="tags"><span class="tag">Weights &amp; Biases</span><span class="tag">TensorBoard</span><span class="tag">Hugging Face Hub</span></div>
+        </div>
+        <div class="tool-group">
+          <span class="g">Compute platforms</span>
+          <div class="tags"><span class="tag">Google Colab</span><span class="tag">Kaggle Notebooks</span><span class="tag">RunPod</span><span class="tag">Lambda Cloud</span></div>
+        </div>
+        <div class="tool-group">
+          <span class="g">Datasets and models</span>
+          <div class="tags"><span class="tag">Hugging Face Datasets</span><span class="tag">Hub model cards</span><span class="tag">meta-llama/Qwen/Mistral/Gemma open weights</span></div>
+        </div>
+        <div class="tool-group">
+          <span class="g">Evaluation</span>
+          <div class="tags"><span class="tag">lm-evaluation-harness</span><span class="tag">LLM-as-judge</span><span class="tag">custom held-out test sets</span></div>
+        </div>
+        <div class="tool-group">
+          <span class="g">Serving handoff</span>
+          <div class="tags"><span class="tag">Ollama</span><span class="tag">vLLM</span><span class="tag">LM Studio</span><span class="tag">text-generation-inference</span></div>
+        </div>
+  </div>
+</div></section>
+<section class="section" id="course-careers"><div class="container">
+  <div class="careers-widget" data-socs="15-2051,15-1299">
+    <h3>What this course trains you for</h3>
+    <div class="roles">
+        <div class="role"><span class="r-t">Data Scientists</span><span class="r-w">$145,554 median</span></div>
+        <div class="role"><span class="r-t">Computer Occupations, All Other</span><span class="r-w">$138,203 median</span></div>
+    </div>
+    <p class="note">CA median wages, 2024&ndash;34 projections (EDD/OEWS). See the full labor-market dashboard on the <a href="../index.html#careers">program overview</a>.</p>
+  </div>
+</div></section>
+<section class="section" id="course-nav"><div class="container">
+  <div class="hero-actions" style="justify-content:space-between;">
+    <a class="btn btn-ghost" href="aiinfra-200.html">&larr; AIINFRA 200: Production Inference Serving & GPU Orchestration</a>
+    <a class="btn btn-primary" href="aiinfra-300.html">AIINFRA 300: Agentic AI & the Model Context Protocol (MCP) &rarr;</a>
+  </div>
+  <p class="hero-note"><a href="../index.html">&larr; Back to program overview</a></p>
+</div></section>
+  </main>
+  <footer class="footer" id="connect" aria-labelledby="footer-title">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-left">
+          <div class="footer-head">
+            <span class="eyebrow">// stackable, non-credit, no cost</span>
+            <h2 id="footer-title">Build the systems <span class="grad">modern AI runs on.</span></h2>
+          </div>
+          <nav class="footer-links" aria-label="Course quick links">
+          <a href="../courses/aiinfra-100.html" data-footer-course-preview="100">AIINFRA 100<span class="handle">AI Systems & Development Environments</span></a>
+          <a href="../courses/aiinfra-101.html" data-footer-course-preview="101">AIINFRA 101<span class="handle">Applied Infrastructure & Containerization</span></a>
+          <a href="../courses/aiinfra-200.html" data-footer-course-preview="200">AIINFRA 200<span class="handle">Production Inference Serving & GPU Orchestration</span></a>
+          <a href="../courses/aiinfra-201.html" data-footer-course-preview="201">AIINFRA 201<span class="handle">Model Adaptation — Fine-Tuning & Quantization</span></a>
+          <a href="../courses/aiinfra-300.html" data-footer-course-preview="300">AIINFRA 300<span class="handle">Agentic AI & the Model Context Protocol (MCP)</span></a>
+          <a href="../courses/aiinfra-301.html" data-footer-course-preview="301">AIINFRA 301<span class="handle">Production RAG & LLMOps — Observability and Evaluation</span></a>
+          <a href="../courses/aiinfra-302.html" data-footer-course-preview="302">AIINFRA 302<span class="handle">AI Security, Guardrails & Governance</span></a>
+          <a href="../courses/aiinfra-303.html" data-footer-course-preview="303">AIINFRA 303<span class="handle">Capstone Project</span></a>
+          </nav>
+        </div>
+        <div class="footer-course-panel" aria-live="polite" data-footer-course-panel>
+          <span class="eyebrow">course outline of record snapshot</span>
+          <div class="footer-course-titleline">
+            <span class="footer-course-code" data-footer-course-code>AIINFRA 100</span>
+            <a class="footer-course-open" href="../courses/aiinfra-100.html" data-footer-course-link>Open course</a>
+          </div>
+          <h3 id="footer-course-preview-title" data-footer-course-title>AI Systems & Development Environments</h3>
+          <p data-footer-course-subtitle>The on-ramp: AI systems literacy plus a professional Python/Git/ML dev environment</p>
+          <p class="footer-course-meta" data-footer-course-meta>Semester 1 / 54 hours / 3 unit equivalent</p>
+          <div class="footer-course-branches">
+            <div>
+              <span class="branch-label">Student learning outcomes</span>
+              <ul data-footer-course-slos>
+              <li>Identify infrastructure components (compute/data/software) for a given AI workload</li>
+              <li>Evaluate cloud vs. on-prem vs. hybrid deployment models against requirements and cost</li>
+              <li>Configure a professional AI dev environment (VS Code, Python, extensions)</li>
+              </ul>
+            </div>
+            <div>
+              <span class="branch-label">Outline preview</span>
+              <ol data-footer-course-outline>
+              <li>Week 1: Introduction to AI Infrastructure</li>
+              <li>Week 2: AI Workloads: Training vs. Inference</li>
+              <li>Week 3: Computational Resources: CPUs, GPUs, TPUs &amp; VRAM</li>
+              <li>Week 16: Final Project &amp; Course Review</li>
+              </ol>
+            </div>
+          </div>
+        </div>
+        <script type="application/json" id="footer-course-data">[{"code": "100", "title": "AI Systems & Development Environments", "subtitle": "The on-ramp: AI systems literacy plus a professional Python/Git/ML dev environment", "href": "../courses/aiinfra-100.html", "meta": "Semester 1 / 54 hours / 3 unit equivalent", "slos": ["Identify infrastructure components (compute/data/software) for a given AI workload", "Evaluate cloud vs. on-prem vs. hybrid deployment models against requirements and cost", "Configure a professional AI dev environment (VS Code, Python, extensions)"], "outline": ["Week 1: Introduction to AI Infrastructure", "Week 2: AI Workloads: Training vs. Inference", "Week 3: Computational Resources: CPUs, GPUs, TPUs & VRAM", "Week 16: Final Project & Course Review"]}, {"code": "101", "title": "Applied Infrastructure & Containerization", "subtitle": "Hands-on build-and-operate: Docker to Kubernetes to cloud, IaC, and CI/CD", "href": "../courses/aiinfra-101.html", "meta": "Semester 1 / 54 hours / 3 unit equivalent", "slos": ["Build optimized, secure Docker images for AI/Python apps", "Run multi-container and GPU-enabled AI stacks (NVIDIA Container Toolkit)", "Deploy and scale AI workloads on Kubernetes (HPA, GPU-aware scheduling)"], "outline": ["Week 1: Why Containers for AI", "Week 2: Docker Fundamentals", "Week 3: Building AI Images with Dockerfiles", "Week 16: Final Project & Course Review"]}, {"code": "200", "title": "Production Inference Serving & GPU Orchestration", "subtitle": "Deploying, Scaling, and Operating LLMs in Production on GPUs", "href": "../courses/aiinfra-200.html", "meta": "Semester 2 / 54 hours / 3 unit equivalent", "slos": ["Deploy containerized Linux services and distinguish dev/prototyping tools from production-grade inference stacks.", "Configure and tune production inference servers (vLLM, TGI, TensorRT-LLM, SGLang) for high-throughput, low-latency serving.", "Orchestrate GPU resources on Kubernetes using the GPU Operator, Dynamic Resource Allocation, MIG, and the KAI Scheduler."], "outline": ["Week 1: Linux Server Foundations for AI Workloads", "Week 2: Docker, GPU Runtime, and Dev-Only Tools (Ollama, LM Studio)", "Week 3: Production Inference Fundamentals and the vLLM Engine", "Week 16: Capstone Project & Course Review"]}, {"code": "201", "title": "Model Adaptation \u2014 Fine-Tuning & Quantization", "subtitle": "Customize and compress open-weight LLMs on consumer and cloud GPUs", "href": "../courses/aiinfra-201.html", "meta": "Semester 2 / 54 hours / 3 unit equivalent", "slos": ["Choose correctly among prompt engineering, RAG, and fine-tuning for a given task, cost, and hardware budget.", "Build instruction/chat datasets and run SFT and parameter-efficient fine-tuning (LoRA/QLoRA/PEFT) on a single GPU.", "Apply DPO preference tuning and track experiments while avoiding overfitting and catastrophic forgetting."], "outline": ["Week 1: Adapt, Prompt, or Retrieve: The Model Customization Decision", "Week 2: Open Models, Licenses, and the Fine-Tuning Toolchain Setup", "Week 3: Dataset Design and Data Preparation for Fine-Tuning", "Week 16: Capstone Project & Course Review"]}, {"code": "300", "title": "Agentic AI & the Model Context Protocol (MCP)", "subtitle": "Building, Securing, and Orchestrating Production AI Agents with MCP", "href": "../courses/aiinfra-300.html", "meta": "Semester 3 / 54 hours / 3 unit equivalent", "slos": ["Build and instrument agents that call OpenAI, Claude, Bedrock, Vertex, and OpenRouter for cost, latency, and reliability.", "Implement tool calling, ReAct, planning, and memory/state management from first principles.", "Construct production agents with LangGraph, CrewAI, the OpenAI Agents SDK, and Pydantic AI."], "outline": ["Week 1: Agentic AI Foundations and the Provider Landscape", "Week 2: Tool Calling, ReAct, and Agent Planning Patterns", "Week 3: Memory and State Management for Agents", "Week 16: Capstone Project & Course Review"]}, {"code": "301", "title": "Production RAG & LLMOps \u2014 Observability and Evaluation", "subtitle": "Building, Evaluating, and Operating Retrieval-Augmented LLM Systems in Production", "href": "../courses/aiinfra-301.html", "meta": "Semester 3 / 54 hours / 3 unit equivalent", "slos": ["Select and configure a vector database (Qdrant, Milvus, Weaviate, or pgvector) based on scale, filtering, and indexing tradeoffs.", "Design chunking and hybrid retrieval pipelines combining dense embeddings, BM25, and cross-encoder reranking.", "Build automated RAG evaluation suites with RAGAS and DeepEval to gate retrieval and generation quality in CI/CD."], "outline": ["Week 1: Introduction to Production RAG Architecture and the LLMOps Lifecycle", "Week 2: Embeddings and Vector Representations for Retrieval", "Week 3: Vector Database Selection: Qdrant, Milvus, Weaviate, and pgvector", "Week 16: Capstone Project & Course Review"]}, {"code": "302", "title": "AI Security, Guardrails & Governance", "subtitle": "Securing, Governing, and Cost-Optimizing Production LLM Systems", "href": "../courses/aiinfra-302.html", "meta": "Semester 4 / 54 hours / 3 unit equivalent", "slos": ["Assess LLM applications against the OWASP LLM Top 10 and build layered defenses against prompt injection, jailbreaks, and data leakage.", "Deploy and configure production guardrail frameworks such as NeMo Guardrails, Llama Guard 4, LLM Guard, Rebuff, and Presidio for input/output validation and PII redaction.", "Implement AI security controls for data privacy, secrets and access management, model provenance, and supply-chain integrity."], "outline": ["Week 1: AI Security Landscape and the LLM Threat Model", "Week 2: OWASP LLM Top 10 (2025) Deep Dive", "Week 3: Direct and Indirect Prompt Injection Attacks", "Week 16: Capstone Project & Course Review"]}, {"code": "303", "title": "Capstone Project", "subtitle": "Design, build, deploy, and present one production-grade AI system", "href": "../courses/aiinfra-303.html", "meta": "Semester 4 / 54 hours / 3 unit equivalent", "slos": ["Scope, plan, and document a production-grade AI infrastructure project with clear requirements, success metrics, and architecture decision records.", "Design and diagram a complete end-to-end AI system architecture integrating compute, containers, cloud, and the model/serving layer.", "Implement, containerize, and deploy the system to the cloud with infrastructure-as-code and an automated CI/CD pipeline."], "outline": ["Week 1: Capstone Kickoff: Scoping a Production AI System", "Week 2: Requirements, Success Metrics, and Architecture Decision Records", "Week 3: System Architecture and Full-Stack Infrastructure Design", "Week 16: Final Capstone Submission, Presentation & Course Review"]}]</script>
+      </div>
+      <div class="footer-bar">
+        <span>&copy; JohnnyRobot LLC &middot; AI Infrastructure and Architecture certificate</span>
+        <span>built accessible &middot; WCAG 2.2 AA &middot; open tools &amp; foundry-ready projects</span>
+      </div>
+    </div>
+  </footer>
+  
+  <script src="../app-20260708-footer-outline.js"></script>
+</body>
+</html>

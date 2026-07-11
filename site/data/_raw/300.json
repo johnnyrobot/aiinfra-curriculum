@@ -1,0 +1,49 @@
+{
+  "code": "300",
+  "title": "Agentic AI & the Model Context Protocol (MCP)",
+  "subtitle": "Building, Securing, and Orchestrating Production AI Agents with MCP",
+  "description": "This course teaches learners to design, build, and deploy production-grade AI agents using leading provider APIs (OpenAI, Anthropic Claude, AWS Bedrock, Google Vertex, OpenRouter), code-first agent frameworks (LangGraph, CrewAI, OpenAI Agents SDK, Pydantic AI), custom API-backed command-line tools, and the Model Context Protocol (MCP) for standardized tool and context integration. Learners implement agent-native CLIs with structured output, configuration checks, API authentication, and compound commands before exposing the same capabilities through MCP, then add multi-agent orchestration, human-in-the-loop workflows, agent evaluation, observability, and guardrails. The course culminates in a capstone deploying a secure, observable, multi-agent system with both CLI and MCP-facing tool surfaces.",
+  "objectives": [
+    "Build agents that call multiple LLM provider APIs (OpenAI, Claude, Bedrock, Vertex, OpenRouter) with cost, latency, and observability instrumentation",
+    "Implement core agent patterns including tool calling, ReAct, planning, and memory/state management from first principles",
+    "Construct production agents using code-first frameworks such as LangGraph, CrewAI, OpenAI Agents SDK, and Pydantic AI",
+    "Build API-backed, agent-native CLI tools and expose selected capabilities through MCP servers with proper authentication and security controls",
+    "Orchestrate multi-agent systems with handoffs, human-in-the-loop checkpoints, and evaluate agent performance using observability tooling"
+  ],
+  "slos": [
+    "Build and instrument agents that call OpenAI, Claude, Bedrock, Vertex, and OpenRouter for cost, latency, and reliability.",
+    "Implement tool calling, ReAct, planning, and memory/state management from first principles.",
+    "Construct production agents with LangGraph, CrewAI, the OpenAI Agents SDK, and Pydantic AI.",
+    "Build API-backed, agent-native CLI tools and expose selected capabilities through secure MCP servers.",
+    "Orchestrate multi-agent systems with handoffs and human-in-the-loop checkpoints, evaluated with observability tooling."
+  ],
+  "weeks": [
+    {"n": 1, "title": "Agentic AI Foundations and the Provider Landscape", "summary": "Introduces agentic AI concepts and surveys the provider landscape (OpenAI, Claude, Bedrock, Vertex, OpenRouter) that agents will call."},
+    {"n": 2, "title": "Tool Calling, ReAct, and Agent Planning Patterns", "summary": "Covers core agent patterns including tool calling, the ReAct loop, and planning strategies from first principles."},
+    {"n": 3, "title": "Memory and State Management for Agents", "summary": "Covers memory and state management techniques that let agents retain context across multi-step interactions."},
+    {"n": 4, "title": "OpenAI, Claude, and Multi-Provider API Integration", "summary": "Covers integrating OpenAI and Anthropic Claude APIs into agents alongside multi-provider integration patterns."},
+    {"n": 5, "title": "AWS Bedrock, Google Vertex AI, and OpenRouter Routing", "summary": "Covers integrating AWS Bedrock and Google Vertex AI and routing requests through OpenRouter."},
+    {"n": 6, "title": "Cost, Latency, and Observability Instrumentation", "summary": "Covers instrumenting agent calls for cost, latency, and observability across providers."},
+    {"n": 7, "title": "Code-First Agent Frameworks I: LangGraph and Pydantic AI", "summary": "Introduces building production agents with the code-first LangGraph and Pydantic AI frameworks."},
+    {"n": 8, "title": "Code-First Agent Frameworks II: CrewAI and OpenAI Agents SDK", "summary": "Midterm week: covers CrewAI and the OpenAI Agents SDK alongside the course midterm assessment."},
+    {"n": 9, "title": "MCP Architecture Deep Dive", "summary": "Provides a deep dive into Model Context Protocol architecture for standardized tool and context integration."},
+    {"n": 10, "title": "Building Agent-Native CLI Tools and MCP Servers", "summary": "Students map a real API into a reliable CLI with doctor checks, structured output, and compound commands, then expose selected capabilities through MCP."},
+    {"n": 11, "title": "MCP Authentication and Tool/Agent Security", "summary": "Covers MCP authentication mechanisms and security controls for tools and agents."},
+    {"n": 12, "title": "Multi-Agent Orchestration and Handoffs", "summary": "Covers orchestrating multi-agent systems, including handoffs between cooperating agents."},
+    {"n": 13, "title": "Human-in-the-Loop Workflows and Emerging Standards (A2A, AGENTS.md)", "summary": "Covers human-in-the-loop checkpoints alongside emerging agent standards such as A2A and AGENTS.md."},
+    {"n": 14, "title": "Agent Evaluation and Observability", "summary": "Covers evaluating agent performance and instrumenting agents with observability tooling."},
+    {"n": 15, "title": "Agent Deployment and Guardrails Introduction", "summary": "Covers deploying agents to production and introduces guardrails for safe agent behavior."},
+    {"n": 16, "title": "Capstone Project & Course Review", "summary": "Final capstone week: students deploy a secure, observable, multi-agent MCP-based system and review the course."}
+  ],
+  "tools": [
+    {"group": "Provider APIs", "items": ["OpenAI API", "Anthropic Claude API", "AWS Bedrock", "Google Vertex AI", "OpenRouter"]},
+    {"group": "Agent Frameworks", "items": ["LangGraph", "CrewAI", "OpenAI Agents SDK", "Pydantic AI"]},
+    {"group": "CLI and MCP Tooling", "items": ["Typer/Click", "argparse", "rich/json output", "SQLite", "MCP Python SDK", "MCP TypeScript SDK", "MCP Inspector", "Claude Desktop/Code MCP integration"]},
+    {"group": "Languages/Runtimes", "items": ["Python 3.11+", "Node.js/TypeScript", "uv/pip", "npm"]},
+    {"group": "Observability", "items": ["LangSmith", "Langfuse", "OpenTelemetry", "Helicone"]},
+    {"group": "Cost/Latency Monitoring", "items": ["provider usage dashboards", "token counting utilities", "custom logging middleware"]},
+    {"group": "Orchestration/Deployment", "items": ["Docker", "GitHub Actions", "FastAPI", "ngrok/Cloudflare Tunnel"]},
+    {"group": "Security", "items": ["OAuth 2.1", "environment-based secrets management", "API key vaults"]},
+    {"group": "Dev Environment", "items": ["VS Code", "Jupyter", "Postman/Insomnia", "git/GitHub"]}
+  ]
+}

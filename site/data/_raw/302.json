@@ -1,0 +1,50 @@
+{
+  "code": "302",
+  "title": "AI Security, Guardrails & Governance",
+  "subtitle": "Securing, Governing, and Cost-Optimizing Production LLM Systems",
+  "description": "This hands-on course prepares learners to secure, govern, and financially optimize generative AI and LLM systems in production. Students master the OWASP LLM Top 10 (2025), build layered defenses against prompt injection and jailbreaks, and deploy modern guardrail frameworks such as NVIDIA NeMo Guardrails, Meta Llama Guard 4, and Microsoft Presidio for PII protection. The course also covers AI governance frameworks including the NIST AI RMF, ISO/IEC 42001, and the EU AI Act, along with responsible AI, bias, and fairness practices. Learners finish with GPU FinOps skills to measure and reduce inference cost per 1,000 requests using spot instances, fractional GPUs, quantization, and autoscaling economics.",
+  "objectives": [
+    "Assess LLM applications against the OWASP LLM Top 10 (2025) and construct layered defenses against direct and indirect prompt injection, jailbreaks, and data leakage.",
+    "Deploy and configure production guardrail frameworks (NeMo Guardrails, Llama Guard 4, LLM Guard, Rebuff, and Presidio) to enforce input/output validation and PII redaction.",
+    "Implement AI security controls for data privacy, secrets and access management, model provenance, and supply-chain integrity across the model lifecycle.",
+    "Evaluate AI systems against the NIST AI RMF, ISO/IEC 42001, and EU AI Act, producing model cards, risk documentation, and bias and fairness assessments.",
+    "Calculate and optimize GPU inference economics using cost per 1,000 requests, spot and fractional GPUs, quantization, KV-cache tuning, and autoscaling to make build-vs-buy decisions."
+  ],
+  "slos": [
+    "Assess LLM applications against the OWASP LLM Top 10 and build layered defenses against prompt injection, jailbreaks, and data leakage.",
+    "Deploy and configure production guardrail frameworks such as NeMo Guardrails, Llama Guard 4, LLM Guard, Rebuff, and Presidio for input/output validation and PII redaction.",
+    "Implement AI security controls for data privacy, secrets and access management, model provenance, and supply-chain integrity.",
+    "Evaluate AI systems against the NIST AI RMF, ISO/IEC 42001, and EU AI Act, producing model cards and risk and fairness documentation.",
+    "Calculate and optimize GPU inference economics using cost per 1,000 requests, spot/fractional GPUs, quantization, and autoscaling."
+  ],
+  "weeks": [
+    {"n": 1, "title": "AI Security Landscape and the LLM Threat Model", "summary": "Introduces the AI security landscape and establishes a threat model for LLM applications."},
+    {"n": 2, "title": "OWASP LLM Top 10 (2025) Deep Dive", "summary": "Provides a deep dive into the OWASP LLM Top 10 (2025) risk categories for LLM applications."},
+    {"n": 3, "title": "Direct and Indirect Prompt Injection Attacks", "summary": "Covers direct and indirect prompt injection attack techniques against LLM applications."},
+    {"n": 4, "title": "Prompt Injection Defenses and Input Validation", "summary": "Covers layered defenses and input validation strategies against prompt injection attacks."},
+    {"n": 5, "title": "Jailbreaks, Red-Teaming, and Adversarial Testing", "summary": "Covers jailbreak techniques and red-teaming/adversarial testing methods for LLM systems."},
+    {"n": 6, "title": "Guardrails Frameworks: NeMo Guardrails and LLM Guard", "summary": "Covers deploying and configuring the NeMo Guardrails and LLM Guard guardrail frameworks."},
+    {"n": 7, "title": "Content Safety and Moderation with Llama Guard 4 and Rebuff", "summary": "Covers content safety and moderation using Llama Guard 4 and Rebuff."},
+    {"n": 8, "title": "PII Protection with Presidio and Output Validation", "summary": "Midterm week: covers PII protection with Microsoft Presidio and output validation, alongside the course midterm exam covering weeks 1-7."},
+    {"n": 9, "title": "Data Privacy, Secrets Management, and Access Control", "summary": "Covers data privacy practices, secrets management, and access control for AI systems."},
+    {"n": 10, "title": "Model Provenance and AI Supply-Chain Security", "summary": "Covers model provenance tracking and AI supply-chain security controls."},
+    {"n": 11, "title": "AI Governance Frameworks: NIST AI RMF, ISO/IEC 42001, and the EU AI Act", "summary": "Covers evaluating AI systems against the NIST AI RMF, ISO/IEC 42001, and the EU AI Act."},
+    {"n": 12, "title": "Responsible AI, Bias, Fairness, and Model Cards", "summary": "Covers responsible AI practices, bias and fairness assessment, and producing model cards."},
+    {"n": 13, "title": "GPU FinOps Foundations: Cost per 1,000 Requests and Right-Sizing", "summary": "Introduces GPU FinOps foundations, including cost per 1,000 requests and right-sizing inference deployments."},
+    {"n": 14, "title": "Fractional GPUs, MIG, Quantization, and KV-Cache Savings", "summary": "Covers cost savings from fractional GPUs, NVIDIA MIG, quantization, and KV-cache tuning."},
+    {"n": 15, "title": "Autoscaling Economics, Spot Instances, and Build-vs-Buy", "summary": "Covers autoscaling economics, spot instance usage, and build-vs-buy decisions for inference."},
+    {"n": 16, "title": "Capstone Project & Course Review", "summary": "Final capstone week: students deliver a project tying together security, governance, and cost optimization, and review the course."}
+  ],
+  "tools": [
+    {"group": "Security & Red-Teaming", "items": ["OWASP LLM Top 10 (2025)", "Garak", "PyRIT", "Promptfoo"]},
+    {"group": "Guardrails", "items": ["NVIDIA NeMo Guardrails", "LLM Guard", "Rebuff", "Guardrails AI"]},
+    {"group": "Content Safety", "items": ["Meta Llama Guard 4", "Llama Prompt Guard 2", "OpenAI Moderation API", "Azure AI Content Safety"]},
+    {"group": "PII & Privacy", "items": ["Microsoft Presidio", "spaCy", "Faker", "Nightfall AI"]},
+    {"group": "Structured Output & Validation", "items": ["Pydantic", "Instructor", "Outlines", "JSON Schema"]},
+    {"group": "Governance Frameworks", "items": ["NIST AI RMF 1.0", "ISO/IEC 42001", "EU AI Act", "MITRE ATLAS"]},
+    {"group": "Documentation & Fairness", "items": ["Hugging Face Model Cards", "Fairlearn", "AI Fairness 360", "Croissant metadata"]},
+    {"group": "Supply-Chain & Provenance", "items": ["Sigstore/Cosign", "CycloneDX AI-BOM", "Hugging Face Hub", "ModelScan"]},
+    {"group": "Serving & GPU Optimization", "items": ["vLLM", "NVIDIA MIG", "TensorRT-LLM", "GPTQ/AWQ quantization"]},
+    {"group": "FinOps & Observability", "items": ["Kubecost/OpenCost", "Prometheus + Grafana", "NVIDIA DCGM", "Karpenter autoscaling"]}
+  ]
+}

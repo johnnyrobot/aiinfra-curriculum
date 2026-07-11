@@ -1,0 +1,47 @@
+{
+  "code": "301",
+  "title": "Production RAG & LLMOps — Observability and Evaluation",
+  "subtitle": "Building, Evaluating, and Operating Retrieval-Augmented LLM Systems in Production",
+  "description": "This course prepares learners to design, evaluate, and operate retrieval-augmented generation systems using modern vector databases, hybrid search, and reranking techniques. Students build RAG evaluation pipelines with RAGAS and DeepEval as automated quality gates, then instrument production systems with tracing, prompt versioning, and drift monitoring using industry-standard LLMOps tooling. Emphasis is placed on hands-on labs that mirror real workplace tasks, from indexing strategy selection through cost-aware, observable deployment. Learners exit ready to support or own the retrieval and evaluation layer of an enterprise AI application.",
+  "objectives": [
+    "Select and configure a vector database (Qdrant, Milvus, Weaviate, or pgvector) based on scale, filtering, and indexing tradeoffs",
+    "Design chunking and hybrid retrieval pipelines combining dense embeddings, BM25, and cross-encoder reranking",
+    "Build automated RAG evaluation suites with RAGAS and DeepEval to gate retrieval and generation quality in CI/CD",
+    "Instrument LLM applications with tracing and observability platforms to diagnose latency, cost, and quality regressions",
+    "Implement production monitoring, prompt versioning, and feedback loops to detect and respond to model and data drift"
+  ],
+  "slos": [
+    "Select and configure a vector database (Qdrant, Milvus, Weaviate, or pgvector) based on scale, filtering, and indexing tradeoffs.",
+    "Design chunking and hybrid retrieval pipelines combining dense embeddings, BM25, and cross-encoder reranking.",
+    "Build automated RAG evaluation suites with RAGAS and DeepEval to gate retrieval and generation quality in CI/CD.",
+    "Instrument LLM applications with tracing and observability platforms to diagnose latency, cost, and quality regressions.",
+    "Implement production monitoring, prompt versioning, and feedback loops to detect and respond to model and data drift."
+  ],
+  "weeks": [
+    {"n": 1, "title": "Introduction to Production RAG Architecture and the LLMOps Lifecycle", "summary": "Introduces why production RAG systems exist and surveys the LLMOps lifecycle that governs how they are built and operated."},
+    {"n": 2, "title": "Embeddings and Vector Representations for Retrieval", "summary": "Covers embeddings and vector representations, including the indexing pipeline that turns documents and queries into comparable vectors."},
+    {"n": 3, "title": "Vector Database Selection: Qdrant, Milvus, Weaviate, and pgvector", "summary": "Compares Qdrant, Milvus, Weaviate, and pgvector to select a vector database based on scale and filtering needs."},
+    {"n": 4, "title": "Indexing Deep Dive: HNSW vs IVF and Metadata Filtering", "summary": "Covers HNSW versus IVF indexing algorithms and metadata filtering strategies for vector search."},
+    {"n": 5, "title": "Chunking Strategies for Real-World Documents", "summary": "Covers fixed-size, recursive, and semantic chunking strategies for splitting real-world documents."},
+    {"n": 6, "title": "Hybrid Search: Combining Dense Retrieval with BM25", "summary": "Covers hybrid search techniques that combine dense embedding retrieval with sparse BM25 keyword search."},
+    {"n": 7, "title": "Cross-Encoder Rerankers and Query Rewriting/Expansion", "summary": "Covers cross-encoder reranking and query rewriting/expansion techniques such as HyDE to improve retrieval quality."},
+    {"n": 8, "title": "Advanced Retrieval Patterns: GraphRAG and Agentic RAG", "summary": "Midterm week: covers advanced retrieval patterns including GraphRAG and agentic RAG alongside the course midterm assessment."},
+    {"n": 9, "title": "RAG Evaluation Foundations with RAGAS", "summary": "Introduces RAG evaluation foundations using the RAGAS framework to score retrieval and generation quality."},
+    {"n": 10, "title": "Deep Evaluation and Failure Analysis with DeepEval", "summary": "Covers deep evaluation and failure analysis of LLM outputs using DeepEval's Pytest-style testing approach."},
+    {"n": 11, "title": "Wiring Evaluation into CI/CD Quality Gates", "summary": "Covers wiring automated RAG evaluation suites into CI/CD pipelines as quality gates."},
+    {"n": 12, "title": "Tracing and Observability: Langfuse and Arize Phoenix", "summary": "Covers instrumenting LLM applications with tracing and observability using Langfuse and Arize Phoenix."},
+    {"n": 13, "title": "Observability at Scale: LangSmith, OpenLLMetry, and MLflow", "summary": "Covers scaling observability practices using LangSmith, OpenLLMetry, and MLflow."},
+    {"n": 14, "title": "Prompt Management, Versioning, and Release Workflows", "summary": "Covers prompt registries, versioning, immutability, and environment-based release workflows for prompts."},
+    {"n": 15, "title": "Production Monitoring: Drift Detection, Feedback Loops, Cost, and Latency", "summary": "Covers production monitoring for model and data drift, feedback loops, cost, and latency."},
+    {"n": 16, "title": "Capstone Project & Course Review", "summary": "Final capstone week: students design, build, and present a production-grade RAG/LLMOps system and review the course."}
+  ],
+  "tools": [
+    {"group": "Vector Databases", "items": ["Qdrant", "Milvus", "Weaviate", "pgvector"]},
+    {"group": "Embedding & Retrieval Libraries", "items": ["Sentence Transformers", "OpenAI Embeddings API", "rank_bm25", "LangChain retrievers"]},
+    {"group": "Rerankers & Query Enhancement", "items": ["Cohere Rerank", "cross-encoder models (Hugging Face)", "HyDE query expansion"]},
+    {"group": "RAG Evaluation Frameworks", "items": ["RAGAS", "DeepEval"]},
+    {"group": "LLM Observability & Tracing", "items": ["Langfuse", "Arize Phoenix", "LangSmith", "OpenLLMetry"]},
+    {"group": "MLOps & Experiment Tracking", "items": ["MLflow", "Weights & Biases"]},
+    {"group": "Low-Code Prototyping On-Ramps", "items": ["n8n", "Langflow", "Flowise"]}
+  ]
+}

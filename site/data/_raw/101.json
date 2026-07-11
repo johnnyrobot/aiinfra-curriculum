@@ -1,0 +1,46 @@
+{
+  "code": "101",
+  "title": "Development Environments & Tools",
+  "subtitle": "The practical developer toolkit for building AI projects",
+  "description": "A hands-on introduction to the developer toolkit behind modern AI work: a professional Python setup, VS Code, Git and GitHub, reproducible environments and package management (venv, conda, and the modern uv), the Jupyter and data-science stack (NumPy, pandas, scikit-learn), deep-learning tooling (PyTorch), testing and code quality, a first look at containers and cloud development environments, and a preview of experiment tracking with MLflow. Students finish able to build, version, and share AI projects and leave with a portfolio.",
+  "objectives": [
+    "Configure and customize a professional AI development environment (VS Code, extensions, Python).",
+    "Write, debug, and structure Python code for AI applications.",
+    "Use Git and GitHub for version control and collaborative development (branching, pull requests).",
+    "Manage reproducible environments and packages with venv, conda, and modern tooling (uv).",
+    "Use the core Python data-science/ML toolchain (NumPy, pandas, Jupyter, scikit-learn) and preview experiment tracking (MLflow)."
+  ],
+  "slos": [
+    "Configure and customize a professional AI development environment",
+    "Write, debug, and structure Python code for AI applications",
+    "Use Git and GitHub for version control and collaboration",
+    "Manage reproducible environments and packages (venv, conda, uv)",
+    "Use the Python data-science/ML toolchain and preview experiment tracking"
+  ],
+  "weeks": [
+    {"n": 1, "title": "Introduction to AI Development Environments", "summary": "Orients students to the AI developer toolkit and sets up their first professional development environment."},
+    {"n": 2, "title": "Python for AI — Fundamentals", "summary": "Covers core Python fundamentals needed to write, run, and debug code for AI applications."},
+    {"n": 3, "title": "Development Environment Customization (VS Code)", "summary": "Customizes VS Code with extensions and settings to build an efficient, professional AI coding setup."},
+    {"n": 4, "title": "Version Control Fundamentals with Git", "summary": "Introduces Git fundamentals for tracking changes and versioning AI project code."},
+    {"n": 5, "title": "Advanced Git for AI Development", "summary": "Builds on Git fundamentals with advanced workflows suited to AI development projects."},
+    {"n": 6, "title": "Collaborative Development with GitHub", "summary": "Uses GitHub for collaborative development, including branching and pull requests."},
+    {"n": 7, "title": "Environment & Package Management (venv, conda, uv)", "summary": "Teaches reproducible environment and package management using venv, conda, and the modern uv tool."},
+    {"n": 8, "title": "Jupyter Ecosystem & Midterm", "summary": "Introduces the Jupyter ecosystem for interactive AI development; this week includes the course midterm."},
+    {"n": 9, "title": "The Python Data Science Stack (NumPy & pandas)", "summary": "Covers the Python data science stack, focusing on NumPy and pandas for data handling."},
+    {"n": 10, "title": "Machine Learning Libraries (scikit-learn)", "summary": "Introduces machine learning libraries in Python, centered on scikit-learn."},
+    {"n": 11, "title": "Deep Learning Development Tools (PyTorch)", "summary": "Introduces deep learning development tooling using PyTorch."},
+    {"n": 12, "title": "Testing & Quality Assurance for AI", "summary": "Covers testing and quality assurance practices for AI code and projects."},
+    {"n": 13, "title": "Containerization for AI Development (Docker)", "summary": "Introduces containerization for AI development using Docker."},
+    {"n": 14, "title": "Cloud Development Environments", "summary": "Explores cloud development environments such as Codespaces and Colab for AI work."},
+    {"n": 15, "title": "Deployment Prep & Experiment Tracking (MLflow)", "summary": "Prepares projects for deployment and previews experiment tracking with MLflow."},
+    {"n": 16, "title": "Final Project & Portfolio Development", "summary": "Students complete a final capstone project and build a portfolio showcasing their work."}
+  ],
+  "tools": [
+    {"group": "Languages", "items": ["Python 3.11+"]},
+    {"group": "Editor/IDE", "items": ["VS Code", "VS Code extensions"]},
+    {"group": "Version Control", "items": ["Git", "GitHub"]},
+    {"group": "Environment & Package Management", "items": ["venv", "conda", "uv"]},
+    {"group": "Notebooks & Data Science Stack", "items": ["Jupyter", "NumPy", "pandas", "scikit-learn"]},
+    {"group": "Deep Learning, Containers & Cloud", "items": ["PyTorch", "Docker", "GitHub Codespaces", "Google Colab", "MLflow"]}
+  ]
+}

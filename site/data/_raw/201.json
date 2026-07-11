@@ -1,0 +1,47 @@
+{
+  "code": "201",
+  "title": "Production Inference Serving & GPU Orchestration",
+  "subtitle": "Deploying, Scaling, and Operating LLMs in Production on GPUs",
+  "description": "This course trains learners to move beyond local, single-user model runners and into production-grade LLM inference serving. Students build a lean Linux and Docker foundation, then learn high-throughput serving engines such as vLLM, TGI, TensorRT-LLM, and SGLang alongside serving platforms like Triton, Ray Serve, and KServe. The back half of the course covers GPU orchestration on Kubernetes, including the GPU Operator, Dynamic Resource Allocation, MIG partitioning, multi-GPU parallelism, and disaggregated prefill/decode. Learners finish able to benchmark, monitor, autoscale, and right-size real inference workloads for cost and performance.",
+  "objectives": [
+    "Deploy containerized Linux services and distinguish dev/prototyping tools from production-grade inference stacks",
+    "Configure and tune production inference servers (vLLM, TGI, TensorRT-LLM, SGLang) for high-throughput, low-latency serving",
+    "Orchestrate GPU resources on Kubernetes using the GPU Operator, Dynamic Resource Allocation, MIG, and the KAI Scheduler",
+    "Implement multi-GPU tensor and pipeline parallelism with autoscaling and load balancing for large models",
+    "Benchmark, monitor, and cost-optimize inference deployments using Prometheus, Grafana, and disaggregated serving architectures"
+  ],
+  "slos": [
+    "Deploy containerized Linux services and distinguish dev/prototyping tools from production-grade inference stacks.",
+    "Configure and tune production inference servers (vLLM, TGI, TensorRT-LLM, SGLang) for high-throughput, low-latency serving.",
+    "Orchestrate GPU resources on Kubernetes using the GPU Operator, Dynamic Resource Allocation, MIG, and the KAI Scheduler.",
+    "Implement multi-GPU tensor and pipeline parallelism with autoscaling and load balancing for large models.",
+    "Benchmark, monitor, and cost-optimize inference deployments using Prometheus, Grafana, and disaggregated serving architectures."
+  ],
+  "weeks": [
+    {"n": 1, "title": "Linux Server Foundations for AI Workloads", "summary": "Builds the Linux server and systemd foundation needed to host AI workloads ahead of containerized and GPU-backed inference work."},
+    {"n": 2, "title": "Docker, GPU Runtime, and Dev-Only Tools (Ollama, LM Studio)", "summary": "Covers Docker and the NVIDIA Container Toolkit while framing Ollama and LM Studio as dev-only tools, not production serving."},
+    {"n": 3, "title": "Production Inference Fundamentals and the vLLM Engine", "summary": "Introduces production inference serving fundamentals and configuring the vLLM engine for high-throughput serving."},
+    {"n": 4, "title": "PagedAttention and Continuous Batching Deep Dive", "summary": "Examines PagedAttention and continuous batching, the core techniques behind high-throughput LLM serving engines."},
+    {"n": 5, "title": "Hugging Face TGI and SGLang Serving Engines", "summary": "Covers configuring and tuning the Hugging Face TGI and SGLang serving engines as alternatives to vLLM."},
+    {"n": 6, "title": "TensorRT-LLM Compilation and Optimization", "summary": "Covers compiling and optimizing models for serving with NVIDIA TensorRT-LLM."},
+    {"n": 7, "title": "NVIDIA Triton Inference Server and Model Repositories", "summary": "Introduces NVIDIA Triton Inference Server and structuring model repositories for production serving."},
+    {"n": 8, "title": "Serving Engine Benchmarking Lab", "summary": "Midterm week: students benchmark serving engines covered so far in a hands-on lab."},
+    {"n": 9, "title": "Ray Serve and KServe for Scalable Model Serving", "summary": "Covers Ray Serve and KServe as scalable serving platforms for production model deployment."},
+    {"n": 10, "title": "GPU Orchestration on Kubernetes with the NVIDIA GPU Operator", "summary": "Introduces GPU orchestration on Kubernetes using the NVIDIA GPU Operator to manage GPU resources for inference workloads."},
+    {"n": 11, "title": "Dynamic Resource Allocation and MIG Partitioning", "summary": "Covers Kubernetes Dynamic Resource Allocation and NVIDIA MIG partitioning for fine-grained GPU resource sharing."},
+    {"n": 12, "title": "Multi-GPU Tensor and Pipeline Parallelism", "summary": "Covers implementing multi-GPU tensor and pipeline parallelism to serve large models across multiple GPUs."},
+    {"n": 13, "title": "Autoscaling, Load Balancing, and the KAI Scheduler", "summary": "Covers autoscaling, load balancing, and the KAI Scheduler for managing inference workload demand on Kubernetes."},
+    {"n": 14, "title": "Disaggregated Prefill/Decode with NVIDIA Dynamo", "summary": "Introduces disaggregated prefill/decode serving architectures using NVIDIA Dynamo."},
+    {"n": 15, "title": "Observability, Cost Analysis, and Right-Sizing", "summary": "Covers observability, cost analysis, and right-sizing techniques for production inference deployments."},
+    {"n": 16, "title": "Capstone Project & Course Review", "summary": "Final capstone week: students design, deploy, and present a production inference serving and GPU orchestration project."}
+  ],
+  "tools": [
+    {"group": "OS & Containers", "items": ["Ubuntu Server", "systemd", "Docker", "NVIDIA Container Toolkit"]},
+    {"group": "Dev/Prototyping Tools", "items": ["Ollama", "LM Studio"]},
+    {"group": "Inference Engines", "items": ["vLLM", "Hugging Face TGI", "TensorRT-LLM", "SGLang"]},
+    {"group": "Serving Platforms", "items": ["NVIDIA Triton Inference Server", "Ray Serve", "KServe"]},
+    {"group": "Kubernetes & GPU Orchestration", "items": ["Kubernetes", "NVIDIA GPU Operator", "Dynamic Resource Allocation", "MIG", "KAI Scheduler", "NVIDIA Dynamo"]},
+    {"group": "Observability & Benchmarking", "items": ["Prometheus", "Grafana", "k6", "NVIDIA Nsight Systems"]},
+    {"group": "Cloud & Hardware", "items": ["NVIDIA A100/H100 GPUs", "Hetzner/DigitalOcean GPU instances", "NCCL"]}
+  ]
+}

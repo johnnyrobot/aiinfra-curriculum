@@ -1,0 +1,46 @@
+{
+  "code": "100",
+  "title": "Introduction to AI Systems & Infrastructure",
+  "subtitle": "The foundation course: AI workload, compute, data & deployment basics",
+  "description": "An introduction to the systems and infrastructure that power modern artificial intelligence. Students learn what AI workloads are, the compute, data, and software layers they depend on, and how AI systems are deployed across cloud, on-premises, and hybrid environments. The course threads a prototype-vs-production mindset throughout and previews the security, governance, and inference-serving topics that later certificate courses cover in depth. No prior AI experience required.",
+  "objectives": [
+    "Define key AI concepts and terminology relevant to infrastructure planning.",
+    "Identify appropriate infrastructure components (compute, data, software) for specific AI workloads.",
+    "Evaluate cloud, on-premises, and hybrid deployment models against real requirements and constraints.",
+    "Apply responsible-AI and governance frameworks (NIST AI RMF, EU AI Act at survey level) to infrastructure decisions.",
+    "Configure a basic, containerized AI development environment for building and testing."
+  ],
+  "slos": [
+    "Define key AI concepts and terminology for infrastructure planning",
+    "Identify infrastructure components (compute/data/software) for a given AI workload",
+    "Evaluate cloud vs. on-prem vs. hybrid deployment models against requirements",
+    "Apply responsible-AI/governance frameworks (NIST AI RMF, EU AI Act) to decisions",
+    "Configure a basic containerized AI development environment"
+  ],
+  "weeks": [
+    {"n": 1, "title": "Introduction to AI Infrastructure", "summary": "Frames the course's prototype-vs-production theme and orients students to AI infrastructure concepts."},
+    {"n": 2, "title": "AI Workloads & Infrastructure Requirements", "summary": "Distinguishes training vs. inference workloads and the infrastructure requirements each demands."},
+    {"n": 3, "title": "Computational Resources for AI", "summary": "Surveys computational resources for AI, including CPUs, GPUs, TPUs, and other accelerators."},
+    {"n": 4, "title": "AI Software Infrastructure", "summary": "Covers AI software infrastructure: frameworks, CUDA, and containers underlying AI systems."},
+    {"n": 5, "title": "Data Infrastructure for AI", "summary": "Examines the data infrastructure that feeds AI systems, from storage to pipelines."},
+    {"n": 6, "title": "Cloud-Based AI Infrastructure", "summary": "Explores how AI infrastructure is provisioned and run on cloud platforms."},
+    {"n": 7, "title": "On-Premises AI Infrastructure", "summary": "Examines on-premises approaches to hosting and running AI infrastructure."},
+    {"n": 8, "title": "Hybrid Deployment Models & Midterm", "summary": "Covers hybrid cloud/on-prem deployment models; includes the course midterm exam."},
+    {"n": 9, "title": "Scaling AI Infrastructure", "summary": "Looks at scaling AI infrastructure, with an introduction to inference serving."},
+    {"n": 10, "title": "AI Infrastructure Security", "summary": "Surveys AI infrastructure security, including an overview of the OWASP LLM Top 10."},
+    {"n": 11, "title": "Monitoring, Logging & Observability", "summary": "Covers monitoring, logging, and observability practices for AI infrastructure."},
+    {"n": 12, "title": "Infrastructure for the AI Development Lifecycle", "summary": "Introduces infrastructure supporting the AI development lifecycle, including MLOps basics."},
+    {"n": 13, "title": "Ethical & Responsible AI Infrastructure", "summary": "Applies responsible-AI governance frameworks, including the NIST AI RMF and EU AI Act, to infrastructure."},
+    {"n": 14, "title": "Cost Optimization for AI Infrastructure", "summary": "Introduces cost optimization (FinOps) practices for AI infrastructure."},
+    {"n": 15, "title": "AI Infrastructure Trends & Future Directions", "summary": "Discusses emerging trends and future directions in AI infrastructure."},
+    {"n": 16, "title": "Capstone Project & Course Review", "summary": "Students complete a final capstone project and review the course as a whole."}
+  ],
+  "tools": [
+    {"group": "Local Development", "items": ["VS Code", "Docker Desktop", "Python 3.11+"]},
+    {"group": "Cloud Platforms", "items": ["AWS free tier", "Google Cloud free tier", "Azure free tier"]},
+    {"group": "Compute & Accelerators", "items": ["CPU", "GPU", "TPU", "Other AI accelerators"]},
+    {"group": "AI Software Stack", "items": ["ML frameworks", "CUDA", "Containers"]},
+    {"group": "Governance & Security Frameworks", "items": ["NIST AI RMF", "EU AI Act", "OWASP LLM Top 10"]},
+    {"group": "Operations Practices", "items": ["Monitoring & logging", "Observability", "MLOps basics", "FinOps / cost optimization"]}
+  ]
+}
